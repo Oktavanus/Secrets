@@ -18,7 +18,7 @@ const userSchema = {
   password: String
 }
 
-const User mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
 
 app.get("/", function(req, res){
   res.render("home");
